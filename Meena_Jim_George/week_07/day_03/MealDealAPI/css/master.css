@@ -1,0 +1,20 @@
+body{
+  background-color:#120500;
+  color: #ff9800bd;
+}
+.container
+{
+  max-width: 960px;
+  margin:0 auto;
+}
+#search{
+  background-color: red;
+  color: #ffffff;
+  padding:2px;
+  font-size:10px;
+}
+
+#query{
+width: 400px;
+height:900px;
+}
