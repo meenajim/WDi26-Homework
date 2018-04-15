@@ -40,15 +40,6 @@ const sieve = function (endPoint) {
   console.log( Date.now() - t );
 }
 
-
-
-
-
-
-
-
-
-
 $(document).ready( function () {
 
   console.log("I am ready");

@@ -1,3 +1,4 @@
+
 require 'pry'
 
 def scrabble word
@@ -21,7 +22,7 @@ def scrabble word
       # if value.include? letter
       #   result += key
       # end
-      result += key if value.include?  letter 
+      result += key if value.include?  letter
     end
   end
 
