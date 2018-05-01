@@ -36,7 +36,7 @@ class SearchForm extends Component{
 
 class Gallery extends Component{
     render(){
-      console.log('this.props: ', this.props);
+      // console.log('this.props: ', this.props.images);
       return(
       <div>
         <img src = {this.props.images} width = "150" height = "150" alt ={this.props.images} />
@@ -50,7 +50,8 @@ class Booksapi extends Component{
 
   constructor(props){
     super(props);
-    this.state = {images: []};
+    // this.state = {images: []};
+
     this.fetchBook = this.fetchBook.bind(this);
   }
 
@@ -71,9 +72,10 @@ class Booksapi extends Component{
     axios.get(flickrURL, flickrParams).then(function(results){
           console.log(results);
           const images = results.data.items[0].volumeInfo.imageLinks.thumbnail;
-          // const title = results.items[0].volumeInfo.title;
+          // const title = results.data.items[0].volumeInfo.title;
 
           console.log(images);
+          // console.log(title);
           this.setState({images});//means images:images.here key and value has same name
         }.bind(this));
 

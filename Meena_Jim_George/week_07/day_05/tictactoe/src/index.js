@@ -9,7 +9,7 @@ import './index.css';
       </button>
     );
   }
-
+//arrow function equal to bind
 class Board extends React.Component {
   renderSquare(i) {
       return(
